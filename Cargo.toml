@@ -1,0 +1,20 @@
+[package]
+name = "bebe"
+authors = ["aarch64-switch-rs authors"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nx = { git = "https://github.com/aarch64-switch-rs/nx", features=["services"] }
+libc = "0.2.144"
+
+[build-dependencies]
+bindgen = "0.65.1"
+
+# For help / more information, see https://github.com/aarch64-switch-rs/cargo-nx/wiki
+
+[package.metadata.nx.nro.nacp]
+default_name = "bebe"
+default_author = "aarch64-switch-rs authors"
+version = "0.1.0"
+application_id = "0x0100AAAABBBBCCCC"
